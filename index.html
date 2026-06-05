@@ -16,6 +16,7 @@
 body{
     line-height:1.6;
     color:#333;
+    background:#fff;
 }
 
 header{
@@ -42,6 +43,9 @@ header h1{
 .hero p{
     font-size:18px;
     margin-bottom:30px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .btn{
@@ -86,6 +90,22 @@ section{
     background:#f8f8f8;
     padding:25px;
     border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:18px;
+}
+
+.contact-box{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
 form{
@@ -98,6 +118,7 @@ input, textarea{
     padding:12px;
     border:1px solid #ccc;
     border-radius:5px;
+    font-size:14px;
 }
 
 button{
@@ -107,6 +128,8 @@ button{
     padding:12px;
     cursor:pointer;
     border-radius:5px;
+    font-size:15px;
+    font-weight:bold;
 }
 
 footer{
@@ -114,6 +137,41 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+    margin-top:20px;
+}
+
+.small-note{
+    text-align:center;
+    margin-top:10px;
+    font-size:14px;
+    color:#555;
+}
+
+@media (max-width: 768px){
+    header{
+        padding:15px 20px;
+        text-align:center;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        max-width:280px;
+        margin:12px auto;
+        text-align:center;
+    }
+
+    .card{
+        min-width:100%;
+    }
 }
 </style>
 </head>
@@ -128,8 +186,8 @@ footer{
     <h2>Connecting Talent with Opportunity</h2>
     <p>Helping companies hire skilled tech professionals and supporting candidates in finding the right career opportunities.</p>
 
-    <a href="#hire-form" class="btn hire">Hire Talent</a>
-    <a href="#job-form" class="btn job">Apply for Jobs</a>
+    <a href="https://forms.gle/P5NzxzNcqV4Tbz488" target="_blank" class="btn hire">Hire Talent</a>
+    <a href="https://forms.gle/Z1K5fqFjCLoHo3hL" target="_blank" class="btn job">Apply for Jobs</a>
 </section>
 
 <section>
@@ -169,41 +227,36 @@ footer{
     </div>
 </section>
 
-<section id="hire-form">
-    <h2 class="section-title">Contact Us for Hiring</h2>
+<section>
+    <h2 class="section-title">Get Started</h2>
 
-    <form>
-        <input type="text" placeholder="Company Name">
-        <input type="text" placeholder="Contact Person">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Mobile Number">
-        <textarea rows="5" placeholder="Hiring Requirement"></textarea>
+    <div class="cards">
+        <div class="card">
+            <h3>Contact Us for Hiring</h3>
+            <p>Share your hiring requirement and our team will connect with you.</p>
+            <br>
+            <a href="https://forms.gle/P5NzxzNcqV4Tbz488" target="_blank" class="btn hire">Submit Hiring Requirement</a>
+        </div>
 
-        <button type="submit">Submit Requirement</button>
-    </form>
-</section>
+        <div class="card">
+            <h3>Apply for Jobs</h3>
+            <p>Register your profile and get notified about suitable opportunities.</p>
+            <br>
+            <a href="https://forms.gle/Z1K5fqFjCLoHo3hL" target="_blank" class="btn job">Register Now</a>
+        </div>
+    </div>
 
-<section id="job-form">
-    <h2 class="section-title">Apply for Jobs</h2>
-
-    <form>
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Mobile Number">
-        <input type="text" placeholder="Skills">
-        <input type="text" placeholder="Preferred Role">
-        <textarea rows="5" placeholder="Tell us about yourself"></textarea>
-
-        <button type="submit">Submit Application</button>
-    </form>
+    <p class="small-note">All submissions are collected securely through Google Forms.</p>
 </section>
 
 <section>
     <h2 class="section-title">Contact Us</h2>
 
-    <p><strong>Phone:</strong> 8197034536</p>
-    <p><strong>Email:</strong> contact@workforceconnect.co.in</p>
-    <p><strong>Website:</strong> workforceconnect.co.in</p>
+    <div class="contact-box">
+        <p><strong>Phone:</strong> 8197034536</p>
+        <p><strong>Email:</strong> contact@workforceconnect.co.in</p>
+        <p><strong>Website:</strong> workforceconnect.co.in</p>
+    </div>
 </section>
 
 <footer>
