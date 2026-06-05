@@ -38,6 +38,7 @@ header h1{
 .hero h2{
     font-size:40px;
     margin-bottom:20px;
+    color:#1f2937;
 }
 
 .hero p{
@@ -46,6 +47,7 @@ header h1{
     max-width:800px;
     margin-left:auto;
     margin-right:auto;
+    color:#4b5563;
 }
 
 .btn{
@@ -53,9 +55,15 @@ header h1{
     padding:14px 30px;
     margin:10px;
     text-decoration:none;
-    border-radius:5px;
+    border-radius:6px;
     color:white;
     font-weight:bold;
+    transition:0.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:0.95;
 }
 
 .hire{
@@ -76,6 +84,7 @@ section{
     text-align:center;
     margin-bottom:30px;
     color:#0d47a1;
+    font-size:28px;
 }
 
 .cards{
@@ -87,25 +96,58 @@ section{
 .card{
     flex:1;
     min-width:300px;
-    background:#f8f8f8;
+    background:#ffffff;
     padding:25px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    border-radius:14px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.06);
+    border:1px solid #eef2f7;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.09);
 }
 
 .card h3{
     margin-bottom:10px;
+    font-size:20px;
+    color:#1f2937;
 }
 
 .card ul{
     padding-left:18px;
+    margin-top:10px;
+}
+
+/* Accent card styles */
+.employer{
+    background:#eef4ff;
+    border-top:5px solid #2563eb;
+}
+
+.candidate{
+    background:#f0fdf4;
+    border-top:5px solid #22c55e;
+}
+
+.hiring{
+    background:#e0f2fe;
+    border-top:5px solid #0ea5e9;
+}
+
+.jobs{
+    background:#dcfce7;
+    border-top:5px solid #16a34a;
 }
 
 .contact-box{
-    background:#f8f8f8;
+    background:#f8fafc;
     padding:25px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    border-radius:14px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.06);
+    border:1px solid #eef2f7;
+    border-top:5px solid #0d47a1;
 }
 
 form{
@@ -198,23 +240,21 @@ footer{
 </section>
 
 <section>
+    <h2 class="section-title">Our Services</h2>
     <div class="cards">
 
-        <div class="card">
+        <div class="card employer">
             <h3>For Employers</h3>
-            <br>
             <ul>
                 <li>Permanent Hiring</li>
                 <li>Bulk Hiring</li>
                 <li>Campus Recruitment</li>
-                <li>Contract Staffing</li>
                 <li>Tech Talent Acquisition</li>
             </ul>
         </div>
 
-        <div class="card">
+        <div class="card candidate">
             <h3>For Candidates</h3>
-            <br>
             <ul>
                 <li>Job Opportunities</li>
                 <li>Interview Preparation</li>
@@ -231,14 +271,14 @@ footer{
     <h2 class="section-title">Get Started</h2>
 
     <div class="cards">
-        <div class="card">
+        <div class="card hiring">
             <h3>Contact Us for Hiring</h3>
             <p>Share your hiring requirement and our team will connect with you.</p>
             <br>
             <a href="https://forms.gle/P5NzxzNcqV4Tbz488" target="_blank" class="btn hire">Submit Hiring Requirement</a>
         </div>
 
-        <div class="card">
+        <div class="card jobs">
             <h3>Apply for Jobs</h3>
             <p>Register your profile and get notified about suitable opportunities.</p>
             <br>
@@ -253,7 +293,6 @@ footer{
     <h2 class="section-title">Contact Us</h2>
 
     <div class="contact-box">
-        <p><strong>Phone:</strong> 8197034536</p>
         <p><strong>Email:</strong> contact@workforceconnect.co.in</p>
         <p><strong>Website:</strong> workforceconnect.co.in</p>
     </div>
