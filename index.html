@@ -25,6 +25,19 @@ header{
     padding:15px 40px;
 }
 
+.header-inner{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    display:block;
+}
+
 header h1{
     font-size:28px;
 }
@@ -195,6 +208,19 @@ footer{
         text-align:center;
     }
 
+    .header-inner{
+        justify-content:center;
+    }
+
+    .logo{
+        width:40px;
+        height:40px;
+    }
+
+    header h1{
+        font-size:22px;
+    }
+
     .hero h2{
         font-size:30px;
     }
@@ -221,7 +247,10 @@ footer{
 <body>
 
 <header>
-    <h1>Workforce Connect Solutions</h1>
+    <div class="header-inner">
+        <img src="logo.png.png" alt="Workforce Connect Solutions Logo" class="logo">
+        <h1>Workforce Connect Solutions</h1>
+    </div>
 </header>
 
 <section class="hero">
